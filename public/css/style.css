@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+  }
+
+  #top_part{
+    display:flex;
+    width:100%;
+    justify-content: space-around;
+  }
+  #top_part nav ul {
+    display: flex;
+    list-style: none;
+  }
+  #top_part nav ul li{
+    padding: 5px 10px
+  }
+  #top_part div:nth-child(1) {
+    display: flex;
+    opacity: .5;
+    transform: translateX(54%)
+  }
+  #top_part div:nth-child(1) img {
+    width: 100px;
+    transform: translateY(40px);
+  }
+  #top_part div:nth-child(1) h2 {
+    padding-top:0px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    user-select: none;
+  }
+
+  #mainContainer{
+      display:flex;
+      justify-content: space-around;
+      width:100%
+  }
+  body{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height:100vh;
+    background-color:#182C41;
+    color:white
+  }
+  body>div:nth-child(1){
+    width:100%;
+    display:flex;
+    flex-direction: column;
+  }
+  .container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align: center;
+    width:200px;
+
+  }
+  .profile-container{
+    background-color:rgb(15, 29, 44);
+    height:200px;
+    width:200px;
+    border-radius:50px;
+    background-repeat: no-repeat;
+    background-position: center bottom -40%;
+    transition: cubic-bezier(.2,-0.29,.81,1.28) .3s;
+    margin:20px 0;
+    box-shadow: rgb(15, 29, 44) 2px 12px 25px
+  }
+  .profile-container:hover{
+    background-position: center bottom -5%;
+    cursor:pointer;
+    box-shadow: none
+  }
+  .container h2 , .container h4{
+    opacity: 0;
+    user-select: none;
+    transition:.3s;
+  }
+  .container h2 {
+    transform:translateY(-10px);
+    height:20px;
+  }
+  .container h4 {
+    transform:translateY(10px)
+  }
+  .profile-container:hover + .container>h2 {
+    opacity: 1 !important;
+  }
+
+  .borderRadiusProfile{
+    border-radius:100% !important ;
+    background-color:#FF5D7B;
+    background-position: center bottom -5%;
+    transform: scale(1.2);
+    box-shadow: none;
+    margin:10px 0
+  }
+  .addOpacity{
+      opacity:1 !important;
+      transform:translateY(0)
+  }
+  h4.addOpacity ,h2.addOpacity {
+    transform:translateY(0px)
+  }
+  .addMarginTop{
+    margin:25px 0 0
+  }
+  .addMarginBottom{
+    margin:0 0 25px
+  }
+  #hidden_button{
+    background-color:#FF5D7B;
+    color:white;
+    font-size:20px;
+    margin:80px auto 0;
+    border-radius:30px;
+    text-decoration: none;
+  }
