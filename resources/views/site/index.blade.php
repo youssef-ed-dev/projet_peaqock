@@ -19,8 +19,8 @@
             <div>
                 <nav>
                     <ul>
-                        <li>FR</li>
-                        <li>EN</li>
+                        <li><a href="#">FR</a></li>
+                        <li><a href="#">EN</a></li>
                     </ul>
                 </nav>
             </div>
@@ -75,7 +75,7 @@
                 <h2 id="myHtwo">juste savoir qui vous êtes</h2>
             </div>
         </div>
-        <a href="" id="hidden_button"></a>
+        <a href="#" id="hidden_button"></a>
     </div>
     <script src="{{ asset('js/script.js') }}"></script>
 </body>
